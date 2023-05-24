@@ -32,7 +32,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="hamburger-menu" onClick={handleClick}>
-        {click ? <FaTimes Size={20} /> : <FaBars Size={20} />}
+        {click ? <FaTimes size={20} /> : <FaBars size={20} />}
       </div>
     </div>
   );
