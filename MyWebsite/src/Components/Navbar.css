@@ -6,6 +6,7 @@
 }
 .nav-menu {
   display: flex;
+  align-items: right;
 }
 .nav-menu li {
   padding: 0 1rem;
@@ -15,6 +16,10 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
+.hamburger-menu {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
@@ -25,8 +30,12 @@
     background: rgba(0, 0, 0, 0);
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100%;
     z-index: -3;
+    transition: 0.3s;
+  }
+  .nav-menu.active {
+    left: 0;
   }
   .nav-menu li {
     padding: 1rem 0;
@@ -41,6 +50,14 @@
     background-color: white;
     border-radius: 10px;
     padding: 0 1rem 0 1rem;
-    transition: 5;
+    transition: 0.3s;
+  }
+  .hamburger-menu {
+    display: initial;
+    background-color: white;
+    zoom: 150%;
+    padding: 0.3rem;
+    padding-bottom: 0.2rem;
+    transform: 0.5s;
   }
 }
