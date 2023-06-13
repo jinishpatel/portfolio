@@ -1,0 +1,79 @@
+warning: in the working copy of 'MyWebsite/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MyWebsite/src/App.tsx', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/MyWebsite/package.json b/MyWebsite/package.json[m
+[1mindex a03c17b..8ba20de 100644[m
+[1m--- a/MyWebsite/package.json[m
+[1m+++ b/MyWebsite/package.json[m
+[36m@@ -1,13 +1,17 @@[m
+ {[m
+[32m+[m[32m  "homepage": "https://jinishpatel.github.io/portfolio",[m
+   "name": "mywebsite",[m
+   "private": true,[m
+   "version": "0.0.0",[m
+   "type": "module",[m
+   "scripts": {[m
+     "dev": "vite",[m
+[32m+[m[32m    "predeploy":"npm run build",[m
+[32m+[m[32m    "deploy": "gh-pages -d build",[m
+     "build": "tsc && vite build",[m
+     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",[m
+     "preview": "vite preview"[m
+[32m+[m[41m    [m
+   },[m
+   "dependencies": {[m
+     "react": "^18.2.0",[m
+[1mdiff --git a/MyWebsite/src/App.tsx b/MyWebsite/src/App.tsx[m
+[1mindex 4d7857b..3db25bc 100644[m
+[1m--- a/MyWebsite/src/App.tsx[m
+[1m+++ b/MyWebsite/src/App.tsx[m
+[36m@@ -1,5 +1,5 @@[m
+[31m-import { useState } from "react";[m
+[31m-import React from "react";[m
+[32m+[m[32m// import { useState } from "react";[m
+[32m+[m[32m// import React from "react";[m
+ import "./App.css";[m
+ import Home from "./routes/Home";[m
+ import Contact from "./routes/Contact";[m
+[1mdiff --git a/MyWebsite/src/Components/Footer.tsx b/MyWebsite/src/Components/Footer.tsx[m
+[1mindex c464ced..f978677 100644[m
+[1m--- a/MyWebsite/src/Components/Footer.tsx[m
+[1m+++ b/MyWebsite/src/Components/Footer.tsx[m
+[36m@@ -1,6 +1,6 @@[m
+[31m-import React from "react";[m
+[32m+[m[32m// import React from "react";[m
+ import "./footer.css";[m
+[31m-import { FaHome, FaMobile, FaVoicemail } from "react-icons/fa";[m
+[32m+[m[32mimport { FaMobile, FaVoicemail } from "react-icons/fa";[m
+ import { RiHome3Line } from "react-icons/ri";[m
+ import { FiFacebook, FiGithub } from "react-icons/fi";[m
+ import { SiInstagram } from "react-icons/si";[m
+[1mdiff --git a/MyWebsite/src/Components/HeroImg.tsx b/MyWebsite/src/Components/HeroImg.tsx[m
+[1mindex 415e131..de0a893 100644[m
+[1m--- a/MyWebsite/src/Components/HeroImg.tsx[m
+[1m+++ b/MyWebsite/src/Components/HeroImg.tsx[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-import React from "react";[m
+[32m+[m[32m// import React from "react";[m
+ import "./heroimgstyle.css";[m
+ import IntoImg from "../assets/4102879_971.jpg";[m
+ import { Link } from "react-router-dom";[m
+[1mdiff --git a/MyWebsite/src/Components/Navbar.tsx b/MyWebsite/src/Components/Navbar.tsx[m
+[1mindex f259a7d..584263a 100644[m
+[1m--- a/MyWebsite/src/Components/Navbar.tsx[m
+[1m+++ b/MyWebsite/src/Components/Navbar.tsx[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-import React, { useState } from "react";[m
+[32m+[m[32mimport  { useState } from "react";[m
+ import "./Navbar.css";[m
+ import { Link } from "react-router-dom";[m
+ import { FaBars, FaTimes } from "react-icons/fa";[m
+[1mdiff --git a/MyWebsite/src/routes/home.tsx b/MyWebsite/src/routes/home.tsx[m
+[1mindex d810b34..44e58d3 100644[m
+[1m--- a/MyWebsite/src/routes/home.tsx[m
+[1m+++ b/MyWebsite/src/routes/home.tsx[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-import React from "react";[m
+[32m+[m[32m// import React from "react";[m
+ import Navbar from "../Components/Navbar";[m
+ import HeroImg from "../Components/HeroImg";[m
+ import Footer from "../Components/Footer";[m

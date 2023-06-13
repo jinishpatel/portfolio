@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import "./footer.css";
-import { FaHome, FaMobile, FaVoicemail } from "react-icons/fa";
+import { FaMobile, FaVoicemail } from "react-icons/fa";
 import { RiHome3Line } from "react-icons/ri";
 import { FiFacebook, FiGithub } from "react-icons/fi";
 import { SiInstagram } from "react-icons/si";
