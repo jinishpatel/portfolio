@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="location">
             <RiHome3Line
               size={20}
-              style={{ color: "#FFF", marginright: "2rem" }}
+              style={{ color: "#FFF", marginRight: "2rem" }}
             />
             <div>
               <p> 1451 Pate Crt</p>
@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="mobile">
             <FaMobile
               size={20}
-              style={{ color: "#FFF", marginright: "2rem" }}
+              style={{ color: "#FFF", marginRight: "2rem" }}
             />
             <div>
               <h4>
@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="email">
             <FaVoicemail
               size={20}
-              style={{ color: "#FFF", marginright: "2rem" }}
+              style={{ color: "#FFF", marginRight: "2rem" }}
             />
             <div>
               <p>
@@ -51,13 +51,13 @@ const Footer = () => {
             live field...
           </p>
           <p>
-            <FiFacebook size={20} style={{ marginright: "10px" }} />
+            <FiFacebook size={20} style={{ marginRight: "2rem" }} />
 
-            <SiInstagram size={20} style={{ marginright: "2rem" }} />
+            <SiInstagram size={20} style={{ marginRight: "2rem" }} />
 
-            <FiGithub size={20} style={{ marginright: "2rem" }} />
+            <FiGithub size={20} style={{ marginRight: "2rem" }} />
 
-            <SlSocialLinkedin size={20} style={{ marginright: "2rem" }} />
+            <SlSocialLinkedin size={20} style={{ marginRight: "2rem" }} />
           </p>
         </div>
       </div>
