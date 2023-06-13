@@ -8,8 +8,8 @@ import { SlSocialLinkedin } from "react-icons/sl";
 
 const Footer = () => {
   return (
-    <div className="Footer">
-      <div className="Footer-container">
+    <div className="footer">
+      <div className="footer-container">
         <div className="left">
           <div className="location">
             <RiHome3Line
@@ -17,8 +17,10 @@ const Footer = () => {
               style={{ color: "#FFF", marginRight: "2rem" }}
             />
             <div>
-              <p> 1451 Pate Crt</p>
-              <p>Mississauga, Canada</p>
+              <a href="https://goo.gl/maps/pmWpXbzZbffUn4Lw5">
+                <p> 1451 Pate Crt</p>
+                <p>Mississauga, Canada</p>
+              </a>
             </div>
           </div>
           <div className="mobile">
@@ -50,14 +52,19 @@ const Footer = () => {
             Self Motivated and eager to learn new technologies and apply that in
             live field...
           </p>
-          <p>
-            <FiFacebook size={20} style={{ marginRight: "2rem" }} />
-
-            <SiInstagram size={20} style={{ marginRight: "2rem" }} />
-
-            <FiGithub size={20} style={{ marginRight: "2rem" }} />
-
-            <SlSocialLinkedin size={20} style={{ marginRight: "2rem" }} />
+          <p className="social">
+            <a href="https://www.facebook.com/jinish5597/">
+              <FiFacebook size={20} style={{ marginRight: "2rem" }} />
+            </a>
+            <a href="https://www.instagram.com/jinish_patel/">
+              <SiInstagram size={20} style={{ marginRight: "2rem" }} />
+            </a>
+            <a href="https://github.com/jinishpatel">
+              <FiGithub size={20} style={{ marginRight: "2rem" }} />
+            </a>
+            <a href="https://www.linkedin.com/in/jinishpateljp/">
+              <SlSocialLinkedin size={20} style={{ marginRight: "2rem" }} />
+            </a>
           </p>
         </div>
       </div>
