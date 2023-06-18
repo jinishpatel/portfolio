@@ -17,7 +17,7 @@ function App() {
       <Route path="/Contact" element={<Contact />} />
       <Route path="/GitHub" element={<GitHub />} />
       <Route path="/Project" element={<Project />} />
-      <Route path="https://github.com/jinishpatel" element={<Resume />} />
+      <Route path="/Resume" element={<Resume />} />
     </Routes>
     // <div><span>hello jinish</span></div>
   );
